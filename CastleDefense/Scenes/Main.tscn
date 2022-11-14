@@ -1,11 +1,14 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://download.jpeg" type="Texture" id=1]
+[ext_resource path="res://Scenes/Footman.tscn" type="PackedScene" id=2]
 
 [node name="Main" type="Node2D"]
-scale = Vector2( 1.0061, 1 )
 
 [node name="Download" type="Sprite" parent="."]
 position = Vector2( 503.927, 323 )
 scale = Vector2( 4.98737, 3.13333 )
 texture = ExtResource( 1 )
+
+[node name="Footman" parent="." instance=ExtResource( 2 )]
+position = Vector2( 265, 361 )

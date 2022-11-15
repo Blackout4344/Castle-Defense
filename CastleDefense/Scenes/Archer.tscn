@@ -13,7 +13,7 @@ extents = Vector2( 250, 32 )
 script = ExtResource( 2 )
 health = 2.0
 attack_cooldown = 3.0
-speed = 200.0
+speed = 100.0
 attack_range = 500.0
 
 [node name="Collision" type="CollisionShape2D" parent="."]

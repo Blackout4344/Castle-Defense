@@ -56,7 +56,7 @@ speed = 150.0
 position = Vector2( -1, 6 )
 scale = Vector2( 0.222917, 0.222917 )
 frames = SubResource( 2 )
-frame = 26
+frame = 14
 playing = true
 
 [node name="Collision" type="CollisionShape2D" parent="."]

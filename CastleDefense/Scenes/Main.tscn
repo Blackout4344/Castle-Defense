@@ -11,11 +11,12 @@ position = Vector2( 1, 0 )
 self_modulate = Color( 0, 0.741176, 1, 1 )
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_left = -46.0
+margin_left = -44.0
 margin_top = -41.0
-margin_right = 1874.0
+margin_right = 1876.0
 margin_bottom = 859.0
 texture = ExtResource( 2 )
+expand = true
 stretch_mode = 7
 
 [node name="Archer" parent="." instance=ExtResource( 1 )]

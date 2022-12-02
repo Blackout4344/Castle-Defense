@@ -28,3 +28,18 @@ position = Vector2( 780, 381 )
 
 [node name="Footman" parent="." instance=ExtResource( 4 )]
 position = Vector2( 73, 400 )
+
+[node name="EnemyPlaceholder2" parent="." instance=ExtResource( 3 )]
+position = Vector2( 441, 323 )
+
+[node name="EnemyPlaceholder3" parent="." instance=ExtResource( 3 )]
+position = Vector2( 569, 386 )
+
+[node name="EnemyPlaceholder4" parent="." instance=ExtResource( 3 )]
+position = Vector2( 274, 342 )
+
+[node name="EnemyPlaceholder5" parent="." instance=ExtResource( 3 )]
+position = Vector2( 159, 334 )
+
+[node name="EnemyPlaceholder6" parent="." instance=ExtResource( 3 )]
+position = Vector2( 985, 309 )

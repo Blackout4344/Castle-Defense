@@ -13,7 +13,7 @@ func _ready():
 func _process(delta):
     var enemy_x : int = 10000000;
     for i in $AttackRange.get_overlapping_bodies():
-        if (i.filename != "res://Scenes/EnemyPlaceholder.tscn"):
+        if (i.filename != "res://Scenes/Enemy.tscn"):
             continue;
         if (i.global_position.x <= enemy_x):
             enemy_x = i.global_position.x;

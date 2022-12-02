@@ -12,3 +12,8 @@ func shoot(target : Vector2):
     look_at(target);
     vel = global_position.direction_to(target);
     vel = vel.normalized() * speed;
+    
+func _on_BodyCollisions_body_entered(body : PhysicsBody2D):
+    if (body.filename == "res://Scenes/Enemy.tscn"):
+        body.health -= damage;
+        queue_free();

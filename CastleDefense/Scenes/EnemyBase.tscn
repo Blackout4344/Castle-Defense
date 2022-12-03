@@ -9,7 +9,7 @@ spawn_rate = 3.0
 
 [node name="Sprite" type="Sprite" parent="."]
 self_modulate = Color( 0.313726, 0.145098, 0, 1 )
-position = Vector2( 0, -1.90735e-06 )
+position = Vector2( 0, -2.27374e-13 )
 scale = Vector2( 1.8125, 10.4219 )
 texture = ExtResource( 1 )
 

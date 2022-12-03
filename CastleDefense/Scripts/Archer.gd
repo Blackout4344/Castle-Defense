@@ -1,16 +1,13 @@
 extends KinematicBody2D
 
 export var health : float;
-export var attack_cooldown : float; 
 export var attack_range : float;
 
 onready var ArrowScene : PackedScene = preload("res://Scenes/Arrow.tscn");
 var target : PhysicsBody2D = null;
-
-func _ready():
-    $AttackCooldown.wait_time = attack_cooldown;
     
-func _process(delta):
+func _physics_process(delta):
+    target = null;
     var enemy_x : int = 10000000;
     for i in $AttackRange.get_overlapping_bodies():
         if (i.filename != "res://Scenes/Enemy.tscn"):

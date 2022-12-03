@@ -8,7 +8,10 @@
 [node name="Main" type="Node2D"]
 position = Vector2( 1, 0 )
 
-[node name="Background" type="TextureRect" parent="."]
+[node name="Background" type="Node2D" parent="."]
+z_index = -1
+
+[node name="Image" type="TextureRect" parent="Background"]
 self_modulate = Color( 0, 0.741176, 1, 1 )
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -20,11 +23,11 @@ texture = ExtResource( 2 )
 expand = true
 stretch_mode = 7
 
-[node name="Archer" parent="." instance=ExtResource( 1 )]
-position = Vector2( 59, 54 )
-
 [node name="Footman" parent="." instance=ExtResource( 4 )]
 position = Vector2( 59, 312 )
+
+[node name="Archer" parent="." instance=ExtResource( 1 )]
+position = Vector2( 38, 56 )
 
 [node name="EnemyBase" parent="." instance=ExtResource( 3 )]
 position = Vector2( 1016, 304 )

@@ -10,9 +10,9 @@ extents = Vector2( 32, 32 )
 extents = Vector2( 612, 618.5 )
 
 [node name="Archer" type="KinematicBody2D"]
+collision_mask = 2
 script = ExtResource( 2 )
 health = 2.0
-attack_cooldown = 2.0
 attack_range = 500.0
 
 [node name="Collision" type="CollisionShape2D" parent="."]

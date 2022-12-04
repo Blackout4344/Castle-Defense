@@ -12,6 +12,7 @@ func _ready():
 
 func _physics_process(delta):
     if (health <= 0):
+        Global.money += 2;
         queue_free();
     $HealthBar.value = health;
     move_and_slide(vel, Vector2.UP);

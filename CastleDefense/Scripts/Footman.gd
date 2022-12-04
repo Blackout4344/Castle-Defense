@@ -26,4 +26,5 @@ func _physics_process(delta):
             
 func _on_AttackCooldown_timeout():
     if (target != null):
+        look_at(target.global_position);
         target.health -= damage;

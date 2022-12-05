@@ -1,4 +1,4 @@
-[gd_scene load_steps=64 format=2]
+[gd_scene load_steps=137 format=2]
 
 [ext_resource path="res://Sprites/Runninganimationforzaheer/runningframe0046.png" type="Texture" id=1]
 [ext_resource path="res://Scripts/Footman.gd" type="Script" id=2]
@@ -58,6 +58,79 @@
 [ext_resource path="res://Sprites/Runninganimationforzaheer/runningframe0041.png" type="Texture" id=56]
 [ext_resource path="res://Sprites/Runninganimationforzaheer/runningframe0045.png" type="Texture" id=57]
 [ext_resource path="res://Sprites/Runninganimationforzaheer/runningframe0027.png" type="Texture" id=58]
+[ext_resource path="res://Sprites/ATTACKKKanimationforNEWgame/ATTACKKKanimationforNEWgame0001.png" type="Texture" id=59]
+[ext_resource path="res://Sprites/ATTACKKKanimationforNEWgame/ATTACKKKanimationforNEWgame0002.png" type="Texture" id=60]
+[ext_resource path="res://Sprites/ATTACKKKanimationforNEWgame/ATTACKKKanimationforNEWgame0004.png" type="Texture" id=61]
+[ext_resource path="res://Sprites/ATTACKKKanimationforNEWgame/ATTACKKKanimationforNEWgame0005.png" type="Texture" id=62]
+[ext_resource path="res://Sprites/ATTACKKKanimationforNEWgame/ATTACKKKanimationforNEWgame0007.png" type="Texture" id=63]
+[ext_resource path="res://Sprites/ATTACKKKanimationforNEWgame/ATTACKKKanimationforNEWgame0011.png" type="Texture" id=64]
+[ext_resource path="res://Sprites/ATTACKKKanimationforNEWgame/ATTACKKKanimationforNEWgame0012.png" type="Texture" id=65]
+[ext_resource path="res://Sprites/ATTACKKKanimationforNEWgame/ATTACKKKanimationforNEWgame0013.png" type="Texture" id=66]
+[ext_resource path="res://Sprites/ATTACKKKanimationforNEWgame/ATTACKKKanimationforNEWgame0014.png" type="Texture" id=67]
+[ext_resource path="res://Sprites/ATTACKKKanimationforNEWgame/ATTACKKKanimationforNEWgame0015.png" type="Texture" id=68]
+[ext_resource path="res://Sprites/ATTACKKKanimationforNEWgame/ATTACKKKanimationforNEWgame0017.png" type="Texture" id=69]
+[ext_resource path="res://Sprites/ATTACKKKanimationforNEWgame/ATTACKKKanimationforNEWgame0018.png" type="Texture" id=70]
+[ext_resource path="res://Sprites/ATTACKKKanimationforNEWgame/ATTACKKKanimationforNEWgame0020.png" type="Texture" id=71]
+[ext_resource path="res://Sprites/ATTACKKKanimationforNEWgame/ATTACKKKanimationforNEWgame0022.png" type="Texture" id=72]
+[ext_resource path="res://Sprites/ATTACKKKanimationforNEWgame/ATTACKKKanimationforNEWgame0023.png" type="Texture" id=73]
+[ext_resource path="res://Sprites/ATTACKKKanimationforNEWgame/ATTACKKKanimationforNEWgame0024.png" type="Texture" id=74]
+[ext_resource path="res://Sprites/ATTACKKKanimationforNEWgame/ATTACKKKanimationforNEWgame0025.png" type="Texture" id=75]
+[ext_resource path="res://Sprites/ATTACKKKanimationforNEWgame/ATTACKKKanimationforNEWgame0026.png" type="Texture" id=76]
+[ext_resource path="res://Sprites/ATTACKKKanimationforNEWgame/ATTACKKKanimationforNEWgame0028.png" type="Texture" id=77]
+[ext_resource path="res://Sprites/ATTACKKKanimationforNEWgame/ATTACKKKanimationforNEWgame0029.png" type="Texture" id=78]
+[ext_resource path="res://Sprites/ATTACKKKanimationforNEWgame/ATTACKKKanimationforNEWgame0030.png" type="Texture" id=79]
+[ext_resource path="res://Sprites/ATTACKKKanimationforNEWgame/ATTACKKKanimationforNEWgame0031.png" type="Texture" id=80]
+[ext_resource path="res://Sprites/ATTACKKKanimationforNEWgame/ATTACKKKanimationforNEWgame0033.png" type="Texture" id=81]
+[ext_resource path="res://Sprites/ATTACKKKanimationforNEWgame/ATTACKKKanimationforNEWgame0034.png" type="Texture" id=82]
+[ext_resource path="res://Sprites/ATTACKKKanimationforNEWgame/ATTACKKKanimationforNEWgame0035.png" type="Texture" id=83]
+[ext_resource path="res://Sprites/ATTACKKKanimationforNEWgame/ATTACKKKanimationforNEWgame0036.png" type="Texture" id=84]
+[ext_resource path="res://Sprites/ATTACKKKanimationforNEWgame/ATTACKKKanimationforNEWgame0039.png" type="Texture" id=85]
+[ext_resource path="res://Sprites/ATTACKKKanimationforNEWgame/ATTACKKKanimationforNEWgame0040.png" type="Texture" id=86]
+[ext_resource path="res://Sprites/ATTACKKKanimationforNEWgame/ATTACKKKanimationforNEWgame0041.png" type="Texture" id=87]
+[ext_resource path="res://Sprites/ATTACKKKanimationforNEWgame/ATTACKKKanimationforNEWgame0042.png" type="Texture" id=88]
+[ext_resource path="res://Sprites/ATTACKKKanimationforNEWgame/ATTACKKKanimationforNEWgame0046.png" type="Texture" id=89]
+[ext_resource path="res://Sprites/ATTACKKKanimationforNEWgame/ATTACKKKanimationforNEWgame0047.png" type="Texture" id=90]
+[ext_resource path="res://Sprites/ATTACKKKanimationforNEWgame/ATTACKKKanimationforNEWgame0048.png" type="Texture" id=91]
+[ext_resource path="res://Sprites/ATTACKKKanimationforNEWgame/ATTACKKKanimationforNEWgame0049.png" type="Texture" id=92]
+[ext_resource path="res://Sprites/ATTACKKKanimationforNEWgame/ATTACKKKanimationforNEWgame0050.png" type="Texture" id=93]
+[ext_resource path="res://Sprites/ATTACKKKanimationforNEWgame/ATTACKKKanimationforNEWgame0051.png" type="Texture" id=94]
+[ext_resource path="res://Sprites/ATTACKKKanimationforNEWgame/ATTACKKKanimationforNEWgame0052.png" type="Texture" id=95]
+[ext_resource path="res://Sprites/ATTACKKKanimationforNEWgame/ATTACKKKanimationforNEWgame0053.png" type="Texture" id=96]
+[ext_resource path="res://Sprites/ATTACKKKanimationforNEWgame/ATTACKKKanimationforNEWgame0056.png" type="Texture" id=97]
+[ext_resource path="res://Sprites/ATTACKKKanimationforNEWgame/ATTACKKKanimationforNEWgame0057.png" type="Texture" id=98]
+[ext_resource path="res://Sprites/ATTACKKKanimationforNEWgame/ATTACKKKanimationforNEWgame0059.png" type="Texture" id=99]
+[ext_resource path="res://Sprites/ATTACKKKanimationforNEWgame/ATTACKKKanimationforNEWgame0060.png" type="Texture" id=100]
+[ext_resource path="res://Sprites/ATTACKKKanimationforNEWgame/ATTACKKKanimationforNEWgame0061.png" type="Texture" id=101]
+[ext_resource path="res://Sprites/ATTACKKKanimationforNEWgame/ATTACKKKanimationforNEWgame0062.png" type="Texture" id=102]
+[ext_resource path="res://Sprites/ATTACKKKanimationforNEWgame/ATTACKKKanimationforNEWgame0063.png" type="Texture" id=103]
+[ext_resource path="res://Sprites/ATTACKKKanimationforNEWgame/ATTACKKKanimationforNEWgame0064.png" type="Texture" id=104]
+[ext_resource path="res://Sprites/ATTACKKKanimationforNEWgame/ATTACKKKanimationforNEWgame0066.png" type="Texture" id=105]
+[ext_resource path="res://Sprites/ATTACKKKanimationforNEWgame/ATTACKKKanimationforNEWgame0067.png" type="Texture" id=106]
+[ext_resource path="res://Sprites/ATTACKKKanimationforNEWgame/ATTACKKKanimationforNEWgame0070.png" type="Texture" id=107]
+[ext_resource path="res://Sprites/ATTACKKKanimationforNEWgame/ATTACKKKanimationforNEWgame0071.png" type="Texture" id=108]
+[ext_resource path="res://Sprites/ATTACKKKanimationforNEWgame/ATTACKKKanimationforNEWgame0072.png" type="Texture" id=109]
+[ext_resource path="res://Sprites/ATTACKKKanimationforNEWgame/ATTACKKKanimationforNEWgame0073.png" type="Texture" id=110]
+[ext_resource path="res://Sprites/ATTACKKKanimationforNEWgame/ATTACKKKanimationforNEWgame0021.png" type="Texture" id=111]
+[ext_resource path="res://Sprites/ATTACKKKanimationforNEWgame/ATTACKKKanimationforNEWgame0016.png" type="Texture" id=112]
+[ext_resource path="res://Sprites/ATTACKKKanimationforNEWgame/ATTACKKKanimationforNEWgame0006.png" type="Texture" id=113]
+[ext_resource path="res://Sprites/ATTACKKKanimationforNEWgame/ATTACKKKanimationforNEWgame0008.png" type="Texture" id=114]
+[ext_resource path="res://Sprites/ATTACKKKanimationforNEWgame/ATTACKKKanimationforNEWgame0010.png" type="Texture" id=115]
+[ext_resource path="res://Sprites/ATTACKKKanimationforNEWgame/ATTACKKKanimationforNEWgame0038.png" type="Texture" id=116]
+[ext_resource path="res://Sprites/ATTACKKKanimationforNEWgame/ATTACKKKanimationforNEWgame0044.png" type="Texture" id=117]
+[ext_resource path="res://Sprites/ATTACKKKanimationforNEWgame/ATTACKKKanimationforNEWgame0045.png" type="Texture" id=118]
+[ext_resource path="res://Sprites/ATTACKKKanimationforNEWgame/ATTACKKKanimationforNEWgame0054.png" type="Texture" id=119]
+[ext_resource path="res://Sprites/ATTACKKKanimationforNEWgame/ATTACKKKanimationforNEWgame0055.png" type="Texture" id=120]
+[ext_resource path="res://Sprites/ATTACKKKanimationforNEWgame/ATTACKKKanimationforNEWgame0037.png" type="Texture" id=121]
+[ext_resource path="res://Sprites/ATTACKKKanimationforNEWgame/ATTACKKKanimationforNEWgame0058.png" type="Texture" id=122]
+[ext_resource path="res://Sprites/ATTACKKKanimationforNEWgame/ATTACKKKanimationforNEWgame0068.png" type="Texture" id=123]
+[ext_resource path="res://Sprites/ATTACKKKanimationforNEWgame/ATTACKKKanimationforNEWgame0032.png" type="Texture" id=124]
+[ext_resource path="res://Sprites/ATTACKKKanimationforNEWgame/ATTACKKKanimationforNEWgame0069.png" type="Texture" id=125]
+[ext_resource path="res://Sprites/ATTACKKKanimationforNEWgame/ATTACKKKanimationforNEWgame0027.png" type="Texture" id=126]
+[ext_resource path="res://Sprites/ATTACKKKanimationforNEWgame/ATTACKKKanimationforNEWgame0043.png" type="Texture" id=127]
+[ext_resource path="res://Sprites/ATTACKKKanimationforNEWgame/ATTACKKKanimationforNEWgame0065.png" type="Texture" id=128]
+[ext_resource path="res://Sprites/ATTACKKKanimationforNEWgame/ATTACKKKanimationforNEWgame0009.png" type="Texture" id=129]
+[ext_resource path="res://Sprites/ATTACKKKanimationforNEWgame/ATTACKKKanimationforNEWgame0003.png" type="Texture" id=130]
+[ext_resource path="res://Sprites/ATTACKKKanimationforNEWgame/ATTACKKKanimationforNEWgame0019.png" type="Texture" id=131]
 
 [sub_resource type="SpriteFrames" id=2]
 animations = [ {
@@ -65,6 +138,11 @@ animations = [ {
 "loop": true,
 "name": "New Anim",
 "speed": 70.0
+}, {
+"frames": [ ExtResource( 59 ), ExtResource( 60 ), ExtResource( 130 ), ExtResource( 61 ), ExtResource( 62 ), ExtResource( 113 ), ExtResource( 63 ), ExtResource( 114 ), ExtResource( 129 ), ExtResource( 115 ), ExtResource( 64 ), ExtResource( 65 ), ExtResource( 66 ), ExtResource( 67 ), ExtResource( 68 ), ExtResource( 112 ), ExtResource( 69 ), ExtResource( 70 ), ExtResource( 131 ), ExtResource( 71 ), ExtResource( 111 ), ExtResource( 72 ), ExtResource( 73 ), ExtResource( 74 ), ExtResource( 75 ), ExtResource( 76 ), ExtResource( 126 ), ExtResource( 77 ), ExtResource( 78 ), ExtResource( 79 ), ExtResource( 80 ), ExtResource( 124 ), ExtResource( 81 ), ExtResource( 82 ), ExtResource( 83 ), ExtResource( 84 ), ExtResource( 121 ), ExtResource( 116 ), ExtResource( 85 ), ExtResource( 86 ), ExtResource( 87 ), ExtResource( 88 ), ExtResource( 127 ), ExtResource( 117 ), ExtResource( 118 ), ExtResource( 89 ), ExtResource( 90 ), ExtResource( 91 ), ExtResource( 92 ), ExtResource( 93 ), ExtResource( 94 ), ExtResource( 95 ), ExtResource( 96 ), ExtResource( 119 ), ExtResource( 120 ), ExtResource( 97 ), ExtResource( 98 ), ExtResource( 122 ), ExtResource( 99 ), ExtResource( 100 ), ExtResource( 101 ), ExtResource( 102 ), ExtResource( 103 ), ExtResource( 104 ), ExtResource( 128 ), ExtResource( 105 ), ExtResource( 106 ), ExtResource( 123 ), ExtResource( 125 ), ExtResource( 107 ), ExtResource( 108 ), ExtResource( 109 ), ExtResource( 110 ) ],
+"loop": true,
+"name": "attack",
+"speed": 67.0
 } ]
 
 [sub_resource type="RectangleShape2D" id=1]
@@ -91,7 +169,7 @@ position = Vector2( 26, -1.90735e-06 )
 scale = Vector2( 0.222917, 0.222917 )
 frames = SubResource( 2 )
 animation = "New Anim"
-frame = 27
+frame = 45
 playing = true
 
 [node name="Collision" type="CollisionShape2D" parent="."]
@@ -116,4 +194,5 @@ custom_styles/fg = SubResource( 4 )
 custom_styles/bg = SubResource( 5 )
 percent_visible = false
 
+[connection signal="animation_finished" from="AnimatedSprite" to="." method="_on_AnimatedSprite_animation_finished"]
 [connection signal="timeout" from="AttackCooldown" to="." method="_on_AttackCooldown_timeout"]

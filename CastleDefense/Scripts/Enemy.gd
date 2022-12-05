@@ -16,7 +16,6 @@ func _physics_process(delta):
         queue_free();
     $HealthBar.value = health;
     move_and_slide(vel, Vector2.UP);
-    target = null;
     var player_x : int = -10000000;
     for i in $BodyCollisions.get_overlapping_bodies():
         if (i.filename != "res://Scenes/Footman.tscn"):
@@ -26,5 +25,5 @@ func _physics_process(delta):
             target = i;
             
 func _on_AttackCooldown_timeout():
-    if (target != null):
+    if (weakref(target).get_ref()):
         target.health -= damage;

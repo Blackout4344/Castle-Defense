@@ -7,7 +7,6 @@ onready var ArrowScene : PackedScene = preload("res://Scenes/Arrow.tscn");
 var target : PhysicsBody2D = null;
     
 func _physics_process(delta):
-    target = null;
     var enemy_x : int = 10000000;
     for i in $AttackRange.get_overlapping_bodies():
         if (i.filename != "res://Scenes/Enemy.tscn"):
@@ -17,7 +16,7 @@ func _physics_process(delta):
             target = i;
 
 func _on_AttackCooldown_timeout():
-    if (target != null):
+    if (weakref(target).get_ref()):
         look_at(target.global_position);
         var new_arrow : KinematicBody2D = ArrowScene.instance();
         get_parent().add_child(new_arrow);

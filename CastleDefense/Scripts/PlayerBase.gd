@@ -19,3 +19,12 @@ func _on_Archer_pressed():
         var new_archer : KinematicBody2D = ArcherScene.instance();
         new_archer.position = $ArcherLocation.position;
         add_child(new_archer);
+
+
+func _on_ShowUnitsShop_pressed():
+    $ShowUnitsShop.visible = false;
+    $Units.visible = true;
+    
+func _on_HideUnitsShop_pressed():
+    $Units.visible = false;
+    $ShowUnitsShop.visible = true;

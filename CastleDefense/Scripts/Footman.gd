@@ -13,8 +13,7 @@ func _ready():
 	$HealthBar.max_value = health;
 
 func _physics_process(delta):
-	if attack == false:
-		$AnimatedSprite.play("New Anim")
+	$AnimatedSprite.play("New Anim")
 	if (health <= 0):
 		queue_free();
 	$HealthBar.value = health;
@@ -29,13 +28,9 @@ func _physics_process(delta):
 			
 func _on_AttackCooldown_timeout():
 	if (weakref(target).get_ref()):
-		attack = true
 		$AnimatedSprite.play("attack")
 		
 		look_at(target.global_position);
 		target.health -= damage;
 		
 
-func _on_AnimatedSprite_animation_finished(anim_name):
-	if anim_name == "attack":
-		attack = false

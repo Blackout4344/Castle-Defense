@@ -169,7 +169,7 @@ position = Vector2( 26, -1.90735e-06 )
 scale = Vector2( 0.222917, 0.222917 )
 frames = SubResource( 2 )
 animation = "New Anim"
-frame = 45
+frame = 2
 playing = true
 
 [node name="Collision" type="CollisionShape2D" parent="."]
@@ -194,5 +194,4 @@ custom_styles/fg = SubResource( 4 )
 custom_styles/bg = SubResource( 5 )
 percent_visible = false
 
-[connection signal="animation_finished" from="AnimatedSprite" to="." method="_on_AnimatedSprite_animation_finished"]
 [connection signal="timeout" from="AttackCooldown" to="." method="_on_AttackCooldown_timeout"]

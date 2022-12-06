@@ -83,17 +83,18 @@ enabled_focus_mode = 0
 text = "Buy Units"
 
 [node name="Units" type="Panel" parent="."]
+visible = false
 margin_left = 60.0
 margin_top = 128.0
 margin_right = 967.0
-margin_bottom = 342.0
+margin_bottom = 344.0
 custom_styles/panel = SubResource( 1 )
 
 [node name="HideUnitsShop" type="Button" parent="Units"]
-margin_left = 779.0
-margin_top = 150.0
-margin_right = 907.0
-margin_bottom = 214.0
+margin_left = 715.0
+margin_top = 96.0
+margin_right = 843.0
+margin_bottom = 160.0
 focus_mode = 0
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_colors/font_color_hover = Color( 0, 0, 0, 1 )

@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=17 format=2]
 
 [ext_resource path="res://icon.png" type="Texture" id=1]
 [ext_resource path="res://Sprites/RunningFootman/RECOVER_Untitled-1_20221114239360001.png" type="Texture" id=2]
@@ -30,9 +30,19 @@ font_data = ExtResource( 3 )
 [sub_resource type="DynamicFont" id=4]
 font_data = ExtResource( 3 )
 
-[node name="PlayerBase" type="Node2D"]
+[sub_resource type="StyleBoxFlat" id=9]
+bg_color = Color( 1, 0, 0, 1 )
+
+[sub_resource type="StyleBoxFlat" id=10]
+bg_color = Color( 0, 0, 0, 1 )
+
+[sub_resource type="RectangleShape2D" id=11]
+extents = Vector2( 56.5, 342.5 )
+
+[node name="PlayerBase" type="StaticBody2D"]
 position = Vector2( 1, 0 )
 script = ExtResource( 5 )
+health = 100.0
 
 [node name="Sprite" type="Sprite" parent="."]
 position = Vector2( 0, -5.72205e-06 )
@@ -137,6 +147,19 @@ margin_bottom = 32.0
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 4 )
 text = "Money: $0"
+
+[node name="HealthBar" type="ProgressBar" parent="."]
+margin_left = 54.0
+margin_top = -31.0
+margin_right = 118.0
+margin_bottom = -17.0
+custom_styles/fg = SubResource( 9 )
+custom_styles/bg = SubResource( 10 )
+percent_visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( -1, 1 )
+shape = SubResource( 11 )
 
 [connection signal="pressed" from="ShowUnitsShop" to="." method="_on_ShowUnitsShop_pressed"]
 [connection signal="pressed" from="Units/HideUnitsShop" to="." method="_on_HideUnitsShop_pressed"]

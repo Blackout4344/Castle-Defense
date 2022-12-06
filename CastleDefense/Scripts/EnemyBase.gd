@@ -9,5 +9,5 @@ func _ready():
 
 func _on_SpawnCooldown_timeout():
     add_child(EnemyScene.instance());
-    spawn_rate *= 0.9;
+    spawn_rate *= 0.999;
     $SpawnCooldown.wait_time = spawn_rate;

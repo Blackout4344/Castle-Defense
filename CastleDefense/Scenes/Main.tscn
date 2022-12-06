@@ -22,7 +22,7 @@ expand = true
 stretch_mode = 7
 
 [node name="EnemyBase" parent="." instance=ExtResource( 3 )]
-position = Vector2( 1073, 304 )
+position = Vector2( 1020, 304 )
 
 [node name="PlayerBase" parent="." instance=ExtResource( 1 )]
 position = Vector2( 0, 304 )

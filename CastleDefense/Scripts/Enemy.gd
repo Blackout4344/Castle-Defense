@@ -18,7 +18,7 @@ func _physics_process(delta):
     move_and_slide(vel, Vector2.UP);
     var player_x : int = -10000000;
     for i in $BodyCollisions.get_overlapping_bodies():
-        if (i.filename != "res://Scenes/Footman.tscn"):
+        if (i.filename != "res://Scenes/Footman.tscn" && i.filename != "res://Scenes/PlayerBase.tscn"):
             continue;
         if (i.global_position.x >= player_x):
             player_x = i.global_position.x;

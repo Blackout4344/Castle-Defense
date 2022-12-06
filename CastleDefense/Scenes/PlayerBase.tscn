@@ -62,7 +62,6 @@ enabled_focus_mode = 0
 text = "Buy Units"
 
 [node name="Units" type="Panel" parent="."]
-visible = false
 margin_left = 60.0
 margin_top = 128.0
 margin_right = 1016.0

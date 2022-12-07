@@ -106,16 +106,16 @@
 [ext_resource path="res://Sprites/archer/archerframe0104.png" type="Texture" id=104]
 [ext_resource path="res://Sprites/archer/archerframe0044.png" type="Texture" id=105]
 
-[sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 32, 32 )
-
 [sub_resource type="SpriteFrames" id=3]
 animations = [ {
-"frames": [ ExtResource( 24 ), ExtResource( 27 ), ExtResource( 45 ), ExtResource( 44 ), ExtResource( 63 ), ExtResource( 42 ), ExtResource( 41 ), ExtResource( 28 ), ExtResource( 46 ), ExtResource( 47 ), ExtResource( 43 ), ExtResource( 64 ), ExtResource( 40 ), ExtResource( 85 ), ExtResource( 86 ), ExtResource( 87 ), ExtResource( 88 ), ExtResource( 29 ), ExtResource( 10 ), ExtResource( 73 ), ExtResource( 52 ), ExtResource( 74 ), ExtResource( 53 ), ExtResource( 54 ), ExtResource( 70 ), ExtResource( 75 ), ExtResource( 55 ), ExtResource( 71 ), ExtResource( 58 ), ExtResource( 72 ), ExtResource( 30 ), ExtResource( 59 ), ExtResource( 82 ), ExtResource( 83 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 84 ), ExtResource( 76 ), ExtResource( 67 ), ExtResource( 31 ), ExtResource( 5 ), ExtResource( 68 ), ExtResource( 69 ), ExtResource( 105 ), ExtResource( 6 ), ExtResource( 77 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 32 ), ExtResource( 9 ), ExtResource( 33 ), ExtResource( 91 ), ExtResource( 92 ), ExtResource( 34 ), ExtResource( 93 ), ExtResource( 35 ), ExtResource( 16 ), ExtResource( 48 ), ExtResource( 17 ), ExtResource( 18 ), ExtResource( 94 ), ExtResource( 95 ), ExtResource( 96 ), ExtResource( 36 ), ExtResource( 14 ), ExtResource( 37 ), ExtResource( 62 ), ExtResource( 15 ), ExtResource( 13 ), ExtResource( 20 ), ExtResource( 97 ), ExtResource( 98 ), ExtResource( 99 ), ExtResource( 78 ), ExtResource( 51 ), ExtResource( 79 ), ExtResource( 21 ), ExtResource( 81 ), ExtResource( 80 ), ExtResource( 89 ), ExtResource( 90 ), ExtResource( 50 ), ExtResource( 22 ), ExtResource( 1 ), ExtResource( 56 ), ExtResource( 3 ), ExtResource( 39 ), ExtResource( 19 ), ExtResource( 38 ), ExtResource( 100 ), ExtResource( 57 ), ExtResource( 101 ), ExtResource( 65 ), ExtResource( 4 ), ExtResource( 66 ), ExtResource( 25 ), ExtResource( 49 ), ExtResource( 102 ), ExtResource( 60 ), ExtResource( 61 ), ExtResource( 26 ), ExtResource( 103 ), ExtResource( 23 ), ExtResource( 104 ) ],
+"frames": [ ExtResource( 18 ), ExtResource( 94 ), ExtResource( 95 ), ExtResource( 96 ), ExtResource( 36 ), ExtResource( 14 ), ExtResource( 37 ), ExtResource( 62 ), ExtResource( 15 ), ExtResource( 13 ), ExtResource( 20 ), ExtResource( 97 ), ExtResource( 98 ), ExtResource( 99 ), ExtResource( 78 ), ExtResource( 51 ), ExtResource( 79 ), ExtResource( 21 ), ExtResource( 81 ), ExtResource( 80 ), ExtResource( 89 ), ExtResource( 90 ), ExtResource( 50 ), ExtResource( 22 ), ExtResource( 1 ), ExtResource( 56 ), ExtResource( 3 ), ExtResource( 39 ), ExtResource( 19 ), ExtResource( 38 ), ExtResource( 100 ), ExtResource( 57 ), ExtResource( 101 ), ExtResource( 65 ), ExtResource( 4 ), ExtResource( 66 ), ExtResource( 25 ), ExtResource( 49 ), ExtResource( 102 ), ExtResource( 60 ), ExtResource( 61 ), ExtResource( 26 ), ExtResource( 103 ), ExtResource( 23 ), ExtResource( 104 ), ExtResource( 24 ), ExtResource( 27 ), ExtResource( 45 ), ExtResource( 44 ), ExtResource( 63 ), ExtResource( 42 ), ExtResource( 41 ), ExtResource( 28 ), ExtResource( 46 ), ExtResource( 47 ), ExtResource( 43 ), ExtResource( 64 ), ExtResource( 40 ), ExtResource( 85 ), ExtResource( 86 ), ExtResource( 87 ), ExtResource( 88 ), ExtResource( 29 ), ExtResource( 10 ), ExtResource( 73 ), ExtResource( 52 ), ExtResource( 74 ), ExtResource( 53 ), ExtResource( 54 ), ExtResource( 70 ), ExtResource( 75 ), ExtResource( 55 ), ExtResource( 71 ), ExtResource( 58 ), ExtResource( 72 ), ExtResource( 30 ), ExtResource( 59 ), ExtResource( 82 ), ExtResource( 83 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 84 ), ExtResource( 76 ), ExtResource( 67 ), ExtResource( 31 ), ExtResource( 5 ), ExtResource( 68 ), ExtResource( 69 ), ExtResource( 105 ), ExtResource( 6 ), ExtResource( 77 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 32 ), ExtResource( 9 ), ExtResource( 33 ), ExtResource( 91 ), ExtResource( 92 ), ExtResource( 34 ), ExtResource( 93 ), ExtResource( 35 ), ExtResource( 16 ), ExtResource( 48 ), ExtResource( 17 ) ],
 "loop": true,
-"name": "default",
+"name": "shoot",
 "speed": 100.0
 } ]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 37, 45.75 )
 
 [sub_resource type="RectangleShape2D" id=2]
 extents = Vector2( 306, 618.5 )
@@ -127,18 +127,18 @@ script = ExtResource( 2 )
 health = 2.0
 attack_range = 500.0
 
+[node name="Sprite" type="AnimatedSprite" parent="."]
+position = Vector2( 34, 10 )
+scale = Vector2( 0.234766, 0.234766 )
+frames = SubResource( 3 )
+animation = "shoot"
+
 [node name="Collision" type="CollisionShape2D" parent="."]
+position = Vector2( 0, 1.25 )
 shape = SubResource( 1 )
 
-[node name="Sprite" type="AnimatedSprite" parent="."]
-position = Vector2( 54, -26 )
-scale = Vector2( 0.4, 0.4 )
-frames = SubResource( 3 )
-
-[node name="Bow" type="Sprite" parent="Sprite"]
-self_modulate = Color( 1, 0.537255, 0, 1 )
-position = Vector2( 55, 7.5 )
-scale = Vector2( 0.279297, 2.25 )
+[node name="ArrowLocation" type="Position2D" parent="."]
+position = Vector2( 23, 0 )
 
 [node name="AttackRange" type="Area2D" parent="."]
 
@@ -149,4 +149,5 @@ shape = SubResource( 2 )
 [node name="AttackCooldown" type="Timer" parent="."]
 autostart = true
 
+[connection signal="animation_finished" from="Sprite" to="." method="_on_Sprite_animation_finished"]
 [connection signal="timeout" from="AttackCooldown" to="." method="_on_AttackCooldown_timeout"]

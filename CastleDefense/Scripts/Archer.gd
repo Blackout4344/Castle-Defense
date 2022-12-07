@@ -17,6 +17,7 @@ func _physics_process(delta):
 
 func _on_AttackCooldown_timeout():
 	if (weakref(target).get_ref()):
+		$Sprite.play("default")
 		look_at(target.global_position);
 		var new_arrow : KinematicBody2D = ArrowScene.instance();
 		get_parent().add_child(new_arrow);

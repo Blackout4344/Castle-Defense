@@ -1,8 +1,15 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Scenes/PlayerBase.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Sprites/castle.jpg" type="Texture" id=2]
 [ext_resource path="res://Scenes/EnemyBase.tscn" type="PackedScene" id=3]
+
+[sub_resource type="Environment" id=1]
+background_mode = 4
+adjustment_enabled = true
+adjustment_brightness = 0.8
+adjustment_contrast = 0.33
+adjustment_saturation = 7.69
 
 [node name="Main" type="Node2D"]
 position = Vector2( 1, 0 )
@@ -23,7 +30,10 @@ expand = true
 stretch_mode = 7
 
 [node name="EnemyBase" parent="." instance=ExtResource( 3 )]
-position = Vector2( 1017, 304 )
+position = Vector2( 1025, 321 )
 
 [node name="PlayerBase" parent="." instance=ExtResource( 1 )]
-position = Vector2( -1, 304 )
+position = Vector2( 0, 305 )
+
+[node name="Postprocessing" type="WorldEnvironment" parent="."]
+environment = SubResource( 1 )

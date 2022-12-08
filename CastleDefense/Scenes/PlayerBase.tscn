@@ -86,6 +86,7 @@ enabled_focus_mode = 0
 text = "Buy Units"
 
 [node name="Units" type="Panel" parent="."]
+visible = false
 margin_left = 60.0
 margin_top = 128.0
 margin_right = 967.0
@@ -93,9 +94,9 @@ margin_bottom = 344.0
 custom_styles/panel = SubResource( 1 )
 
 [node name="HideUnitsShop" type="Button" parent="Units"]
-margin_left = 715.0
+margin_left = 716.0
 margin_top = 96.0
-margin_right = 843.0
+margin_right = 844.0
 margin_bottom = 160.0
 focus_mode = 0
 custom_colors/font_color = Color( 0, 0, 0, 1 )
@@ -190,10 +191,10 @@ custom_fonts/font = SubResource( 4 )
 text = "Money: $0"
 
 [node name="HealthBar" type="ProgressBar" parent="."]
-margin_left = 54.0
-margin_top = -31.0
-margin_right = 118.0
-margin_bottom = -17.0
+margin_left = 60.0
+margin_top = -208.0
+margin_right = 124.0
+margin_bottom = -194.0
 custom_styles/fg = SubResource( 9 )
 custom_styles/bg = SubResource( 10 )
 percent_visible = false

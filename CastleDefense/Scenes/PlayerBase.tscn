@@ -61,19 +61,19 @@ position = Vector2( -1, 1 )
 shape = SubResource( 11 )
 
 [node name="FootmanLocation" type="Position2D" parent="."]
-position = Vector2( 188, 1 )
+position = Vector2( 134, 226 )
 
 [node name="ArcherLocation" type="Position2D" parent="."]
-position = Vector2( 95, -160 )
+position = Vector2( 159, -64 )
 
 [node name="DitchLocation" type="Position2D" parent="."]
-position = Vector2( 118, 0 )
+position = Vector2( 65, 226 )
 
 [node name="ShowUnitsShop" type="Button" parent="."]
-margin_left = 447.0
-margin_top = 192.0
-margin_right = 575.0
-margin_bottom = 256.0
+margin_left = 439.0
+margin_top = -310.0
+margin_right = 567.0
+margin_bottom = -246.0
 focus_mode = 0
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
@@ -88,9 +88,9 @@ text = "Buy Units"
 [node name="Units" type="Panel" parent="."]
 visible = false
 margin_left = 60.0
-margin_top = 128.0
+margin_top = -342.0
 margin_right = 967.0
-margin_bottom = 344.0
+margin_bottom = -126.0
 custom_styles/panel = SubResource( 1 )
 
 [node name="HideUnitsShop" type="Button" parent="Units"]
@@ -192,9 +192,9 @@ text = "Money: $0"
 
 [node name="HealthBar" type="ProgressBar" parent="."]
 margin_left = 60.0
-margin_top = -208.0
+margin_top = -120.0
 margin_right = 124.0
-margin_bottom = -194.0
+margin_bottom = -106.0
 custom_styles/fg = SubResource( 9 )
 custom_styles/bg = SubResource( 10 )
 percent_visible = false

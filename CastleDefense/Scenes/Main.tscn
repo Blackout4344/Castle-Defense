@@ -42,23 +42,23 @@ tracks/0/keys = {
 position = Vector2( 1, 0 )
 script = ExtResource( 5 )
 
-[node name="EnemyBase" parent="." instance=ExtResource( 3 )]
-position = Vector2( 1025, 321 )
-
-[node name="PlayerBase" parent="." instance=ExtResource( 1 )]
-position = Vector2( 0, 305 )
+[node name="Backround" type="Sprite" parent="."]
+position = Vector2( 556, 303 )
+scale = Vector2( 2.2, 2.2 )
+z_index = -1
+texture = ExtResource( 4 )
 
 [node name="Cloud" type="Sprite" parent="."]
 position = Vector2( -3, 80 )
 z_index = -1
 texture = ExtResource( 2 )
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+[node name="CloudAnimation" type="AnimationPlayer" parent="."]
 "anims/New Anim" = SubResource( 2 )
 anims/RESET = SubResource( 3 )
 
-[node name="Backround" type="Sprite" parent="."]
-position = Vector2( 556, 303 )
-scale = Vector2( 2.2, 2.2 )
-z_index = -1
-texture = ExtResource( 4 )
+[node name="EnemyBase" parent="." instance=ExtResource( 3 )]
+position = Vector2( 1025, 321 )
+
+[node name="PlayerBase" parent="." instance=ExtResource( 1 )]
+position = Vector2( 0, 305 )

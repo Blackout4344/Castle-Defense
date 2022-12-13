@@ -34,14 +34,15 @@ shape = SubResource( 1 )
 autostart = true
 
 [node name="HealthBar" type="ProgressBar" parent="."]
-margin_left = -129.0
-margin_top = -224.0
-margin_right = -65.0
-margin_bottom = -210.0
+margin_left = -124.0
+margin_top = -137.0
+margin_right = -60.0
+margin_bottom = -123.0
 custom_styles/fg = SubResource( 2 )
 custom_styles/bg = SubResource( 3 )
 percent_visible = false
 
 [node name="EnemyLocation" type="Position2D" parent="."]
+position = Vector2( -68, 223 )
 
 [connection signal="timeout" from="SpawnCooldown" to="." method="_on_SpawnCooldown_timeout"]

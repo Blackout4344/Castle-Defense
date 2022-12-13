@@ -158,6 +158,7 @@ bg_color = Color( 1, 0, 0, 1 )
 bg_color = Color( 0, 0, 0, 1 )
 
 [node name="Footman" type="KinematicBody2D"]
+position = Vector2( 8, 0 )
 collision_mask = 2
 script = ExtResource( 2 )
 health = 4.0
@@ -169,7 +170,7 @@ position = Vector2( 26, -1.90735e-06 )
 scale = Vector2( 0.222917, 0.222917 )
 frames = SubResource( 2 )
 animation = "run"
-frame = 27
+frame = 54
 playing = true
 
 [node name="Collision" type="CollisionShape2D" parent="."]

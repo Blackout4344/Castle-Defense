@@ -1,0 +1,18 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Sprites/castle.jpg" type="Texture" id=1]
+
+[node name="Background" type="Node2D"]
+z_index = -1
+
+[node name="Image" type="TextureRect" parent="."]
+self_modulate = Color( 0, 0.741176, 1, 1 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -179.0
+margin_top = -30.0
+margin_right = 1188.0
+margin_bottom = 612.0
+texture = ExtResource( 1 )
+expand = true
+stretch_mode = 7

@@ -13,7 +13,8 @@ bg_color = Color( 1, 0, 0, 1 )
 bg_color = Color( 0, 0, 0, 1 )
 
 [node name="EnemyBase" type="StaticBody2D"]
-position = Vector2( 9, 96 )
+position = Vector2( -4, 1 )
+collision_layer = 2
 script = ExtResource( 2 )
 spawn_rate = 3.0
 health = 100.0
@@ -42,6 +43,5 @@ custom_styles/bg = SubResource( 3 )
 percent_visible = false
 
 [node name="EnemyLocation" type="Position2D" parent="."]
-position = Vector2( -97, -16 )
 
 [connection signal="timeout" from="SpawnCooldown" to="." method="_on_SpawnCooldown_timeout"]

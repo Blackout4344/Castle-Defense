@@ -32,7 +32,6 @@ font_data = ExtResource( 3 )
 
 [sub_resource type="StreamTexture" id=14]
 flags = 4
-load_path = "res://.import/imageedit_2_5852255224.png-ad97702b3904b2e82016b98ff41a2e45.stex"
 
 [sub_resource type="DynamicFont" id=12]
 font_data = ExtResource( 3 )
@@ -48,6 +47,7 @@ bg_color = Color( 0, 0, 0, 1 )
 
 [node name="PlayerBase" type="StaticBody2D"]
 position = Vector2( 1, 0 )
+collision_mask = 2
 script = ExtResource( 5 )
 health = 100.0
 
@@ -61,7 +61,7 @@ position = Vector2( -1, 1 )
 shape = SubResource( 11 )
 
 [node name="FootmanLocation" type="Position2D" parent="."]
-position = Vector2( 188, 0 )
+position = Vector2( 188, 1 )
 
 [node name="ArcherLocation" type="Position2D" parent="."]
 position = Vector2( 95, -160 )

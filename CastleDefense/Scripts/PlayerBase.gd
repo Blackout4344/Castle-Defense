@@ -1,11 +1,11 @@
 extends Node2D
 
-
 export var health : float;
 
 var FootmanScene : PackedScene = preload("res://Scenes/Footman.tscn");
 var ArcherScene : PackedScene = preload("res://Scenes/Archer.tscn");
 var DitchScene : PackedScene = preload("res://Scenes/Ditch.tscn");
+var KnightScene : PackedScene = preload("res://Scenes/Knight.tscn");
 
 func _process(delta):
     $Units/Money.text = "Money: $" + str(Global.money)
@@ -47,3 +47,11 @@ func _on_Ditch_pressed():
         new_ditch.position = $DitchLocation.position;
         new_ditch.z_index = -1;
         add_child(new_ditch);
+        
+func _on_Knight_pressed():
+    if (Global.money >= 12):
+        Global.money -= 12;
+        var new_knight : KinematicBody2D = KnightScene.instance();
+        new_knight.position = $KnightLocation.position;
+        new_knight.z_index = -1;
+        add_child(new_knight);

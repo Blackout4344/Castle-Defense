@@ -162,7 +162,7 @@ position = Vector2( 8, 0 )
 collision_mask = 2
 script = ExtResource( 2 )
 health = 4.0
-damage = 2.0
+damage = 1.0
 speed = 150.0
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
@@ -170,7 +170,7 @@ position = Vector2( 0, -1.13687e-13 )
 scale = Vector2( 0.222917, 0.222917 )
 frames = SubResource( 2 )
 animation = "run"
-frame = 28
+frame = 33
 playing = true
 offset = Vector2( 139.065, 35.8878 )
 

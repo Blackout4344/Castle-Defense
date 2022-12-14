@@ -1,6 +1,5 @@
 extends KinematicBody2D
 
-export var health : float;
 export var attack_range : float;
 
 onready var ArrowScene : PackedScene = preload("res://Scenes/Arrow.tscn");

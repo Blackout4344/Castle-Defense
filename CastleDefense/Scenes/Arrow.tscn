@@ -12,7 +12,7 @@ extents = Vector2( 24.5, 10 )
 [node name="Arrow" type="KinematicBody2D"]
 collision_mask = 2
 script = ExtResource( 2 )
-damage = 2.0
+damage = 1.0
 speed = 500.0
 
 [node name="Sprite" type="Sprite" parent="."]

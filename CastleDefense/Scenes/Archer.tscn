@@ -99,7 +99,6 @@ extents = Vector2( 306, 618.5 )
 position = Vector2( 1, 0 )
 collision_mask = 2
 script = ExtResource( 2 )
-health = 2.0
 attack_range = 500.0
 
 [node name="Sprite" type="AnimatedSprite" parent="."]
@@ -107,7 +106,7 @@ position = Vector2( 34, 10 )
 scale = Vector2( 0.234766, 0.234766 )
 frames = SubResource( 3 )
 animation = "shoot"
-frame = 43
+frame = 62
 playing = true
 
 [node name="Collision" type="CollisionShape2D" parent="."]

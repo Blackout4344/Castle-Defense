@@ -1,3 +1,3 @@
 extends Node
 
-var money : float = 100000;
+var money : float = 20;

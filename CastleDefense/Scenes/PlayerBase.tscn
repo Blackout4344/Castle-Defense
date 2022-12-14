@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=2]
+[gd_scene load_steps=20 format=2]
 
 [ext_resource path="res://icon.png" type="Texture" id=1]
 [ext_resource path="res://Sprites/RunningFootman/RECOVER_Untitled-1_20221114239360001.png" type="Texture" id=2]
@@ -8,6 +8,12 @@
 
 [sub_resource type="RectangleShape2D" id=11]
 extents = Vector2( 56.5, 342.5 )
+
+[sub_resource type="StyleBoxFlat" id=9]
+bg_color = Color( 1, 0, 0, 1 )
+
+[sub_resource type="StyleBoxFlat" id=10]
+bg_color = Color( 0, 0, 0, 1 )
 
 [sub_resource type="DynamicFontData" id=7]
 font_path = "res://Fonts/metal lord.otf"
@@ -36,14 +42,11 @@ flags = 4
 [sub_resource type="DynamicFont" id=12]
 font_data = ExtResource( 3 )
 
-[sub_resource type="DynamicFont" id=4]
+[sub_resource type="DynamicFont" id=15]
 font_data = ExtResource( 3 )
 
-[sub_resource type="StyleBoxFlat" id=9]
-bg_color = Color( 1, 0, 0, 1 )
-
-[sub_resource type="StyleBoxFlat" id=10]
-bg_color = Color( 0, 0, 0, 1 )
+[sub_resource type="DynamicFont" id=4]
+font_data = ExtResource( 3 )
 
 [node name="PlayerBase" type="StaticBody2D"]
 position = Vector2( 1, 0 )
@@ -60,6 +63,15 @@ texture = ExtResource( 1 )
 position = Vector2( -1, 1 )
 shape = SubResource( 11 )
 
+[node name="HealthBar" type="ProgressBar" parent="."]
+margin_left = 60.0
+margin_top = -120.0
+margin_right = 124.0
+margin_bottom = -106.0
+custom_styles/fg = SubResource( 9 )
+custom_styles/bg = SubResource( 10 )
+percent_visible = false
+
 [node name="FootmanLocation" type="Position2D" parent="."]
 position = Vector2( 134, 226 )
 
@@ -69,11 +81,14 @@ position = Vector2( 159, -64 )
 [node name="DitchLocation" type="Position2D" parent="."]
 position = Vector2( 65, 226 )
 
+[node name="KnightLocation" type="Position2D" parent="."]
+position = Vector2( 134, 226 )
+
 [node name="ShowUnitsShop" type="Button" parent="."]
 margin_left = 439.0
-margin_top = -310.0
+margin_top = -260.0
 margin_right = 567.0
-margin_bottom = -246.0
+margin_bottom = -196.0
 focus_mode = 0
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
@@ -86,18 +101,17 @@ enabled_focus_mode = 0
 text = "Buy Units"
 
 [node name="Units" type="Panel" parent="."]
-visible = false
 margin_left = 60.0
 margin_top = -342.0
 margin_right = 967.0
-margin_bottom = -126.0
+margin_bottom = -76.0
 custom_styles/panel = SubResource( 1 )
 
 [node name="HideUnitsShop" type="Button" parent="Units"]
-margin_left = 716.0
-margin_top = 96.0
-margin_right = 844.0
-margin_bottom = 160.0
+margin_left = 705.0
+margin_top = 161.0
+margin_right = 833.0
+margin_bottom = 225.0
 focus_mode = 0
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
@@ -110,10 +124,10 @@ enabled_focus_mode = 0
 text = "Close"
 
 [node name="Footman" type="TextureButton" parent="Units"]
-margin_left = 16.0
-margin_top = 32.0
-margin_right = 128.0
-margin_bottom = 144.0
+margin_left = 5.0
+margin_top = 97.0
+margin_right = 117.0
+margin_bottom = 209.0
 focus_mode = 0
 enabled_focus_mode = 0
 texture_normal = ExtResource( 2 )
@@ -134,10 +148,9 @@ align = 1
 valign = 1
 
 [node name="Archer" type="TextureButton" parent="Units"]
-margin_left = 113.0
-margin_top = -65.0
-margin_right = 317.0
-margin_bottom = 231.0
+margin_left = 102.0
+margin_right = 306.0
+margin_bottom = 296.0
 focus_mode = 0
 enabled_focus_mode = 0
 texture_normal = ExtResource( 4 )
@@ -158,10 +171,10 @@ align = 1
 valign = 1
 
 [node name="Ditch" type="TextureButton" parent="Units"]
-margin_left = 281.0
-margin_top = 42.0
-margin_right = 364.0
-margin_bottom = 114.0
+margin_left = 270.0
+margin_top = 107.0
+margin_right = 353.0
+margin_bottom = 179.0
 focus_mode = 0
 enabled_focus_mode = 0
 texture_normal = SubResource( 14 )
@@ -181,26 +194,39 @@ text = "Ditch: $12"
 align = 1
 valign = 1
 
+[node name="Knight" type="TextureButton" parent="Units"]
+margin_left = 379.0
+margin_top = 107.0
+margin_right = 462.0
+margin_bottom = 179.0
+focus_mode = 0
+enabled_focus_mode = 0
+expand = true
+stretch_mode = 5
+
+[node name="PriceTag" type="Label" parent="Units/Knight"]
+margin_left = -14.0
+margin_top = 70.0
+margin_right = 98.0
+margin_bottom = 94.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 15 )
+text = "Knight: $12"
+align = 1
+valign = 1
+
 [node name="Money" type="Label" parent="Units"]
-margin_left = 803.0
-margin_top = 8.0
-margin_right = 923.0
-margin_bottom = 32.0
+margin_left = 792.0
+margin_top = 73.0
+margin_right = 912.0
+margin_bottom = 97.0
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 4 )
 text = "Money: $0"
-
-[node name="HealthBar" type="ProgressBar" parent="."]
-margin_left = 60.0
-margin_top = -120.0
-margin_right = 124.0
-margin_bottom = -106.0
-custom_styles/fg = SubResource( 9 )
-custom_styles/bg = SubResource( 10 )
-percent_visible = false
 
 [connection signal="pressed" from="ShowUnitsShop" to="." method="_on_ShowUnitsShop_pressed"]
 [connection signal="pressed" from="Units/HideUnitsShop" to="." method="_on_HideUnitsShop_pressed"]
 [connection signal="pressed" from="Units/Footman" to="." method="_on_Footman_pressed"]
 [connection signal="pressed" from="Units/Archer" to="." method="_on_Archer_pressed"]
 [connection signal="pressed" from="Units/Ditch" to="." method="_on_Ditch_pressed"]
+[connection signal="pressed" from="Units/Knight" to="." method="_on_Knight_pressed"]

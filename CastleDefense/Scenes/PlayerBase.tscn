@@ -88,7 +88,7 @@ position = Vector2( 65, 226 )
 position = Vector2( 134, 226 )
 
 [node name="BigMonkeLocation" type="Position2D" parent="."]
-position = Vector2( 134, 226 )
+position = Vector2( 133, 226 )
 
 [node name="ShowUnitsShop" type="Button" parent="."]
 margin_left = 439.0

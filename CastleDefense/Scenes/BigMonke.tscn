@@ -1,0 +1,51 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Scripts/BigMonke.gd" type="Script" id=1]
+[ext_resource path="res://Sprites/4qbzyo9ros861.png" type="Texture" id=2]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 68, 67 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 154, 152 )
+
+[sub_resource type="StyleBoxFlat" id=3]
+bg_color = Color( 1, 0, 0, 1 )
+
+[sub_resource type="StyleBoxFlat" id=4]
+bg_color = Color( 0, 0, 0, 1 )
+
+[node name="BigMonke" type="KinematicBody2D"]
+collision_mask = 2
+script = ExtResource( 1 )
+health = 16.0
+damage = 4.0
+speed = 100.0
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 0, 2.38419e-06 )
+scale = Vector2( 0.302222, 0.453333 )
+texture = ExtResource( 2 )
+flip_h = true
+
+[node name="Collision" type="CollisionShape2D" parent="."]
+shape = SubResource( 1 )
+
+[node name="BodyCollisions" type="Area2D" parent="."]
+
+[node name="Collision" type="CollisionShape2D" parent="BodyCollisions"]
+shape = SubResource( 2 )
+
+[node name="AttackCooldown" type="Timer" parent="."]
+autostart = true
+
+[node name="HealthBar" type="ProgressBar" parent="."]
+margin_left = -88.0
+margin_top = -144.0
+margin_right = 88.0
+margin_bottom = -120.0
+custom_styles/fg = SubResource( 3 )
+custom_styles/bg = SubResource( 4 )
+percent_visible = false
+
+[connection signal="timeout" from="AttackCooldown" to="." method="_on_AttackCooldown_timeout"]

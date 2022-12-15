@@ -8,7 +8,7 @@ var target : PhysicsBody2D = null;
 func _physics_process(delta):
     var enemy_x : int = 10000000;
     for i in $AttackRange.get_overlapping_bodies():
-        if (i.filename != "res://Scenes/Enemy.tscn"):
+        if (i.filename != "res://Scenes/EnemyFootman.tscn"):
             continue;
         if (i.global_position.x <= enemy_x):
             enemy_x = i.global_position.x;

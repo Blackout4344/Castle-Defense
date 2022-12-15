@@ -7,6 +7,6 @@ func _process(delta):
         queue_free();
 
 func _on_Trap_body_entered(body : PhysicsBody2D):
-    if (body.filename == "res://Scenes/Enemy.tscn"):
+    if (body.filename == "res://Scenes/EnemyFootman.tscn"):
         body.health = 0;
         trap_hold -= 1;

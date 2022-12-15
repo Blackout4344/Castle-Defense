@@ -17,7 +17,7 @@ func _physics_process(delta):
     move_and_slide(vel, Vector2.UP);
     var enemy_x : int = 10000000;
     for i in $BodyCollisions.get_overlapping_bodies():
-        if (i.filename != "res://Scenes/Enemy.tscn" && i.filename != "res://Scenes/EnemyBase.tscn"):
+        if (i.filename != "res://Scenes/EnemyFootman.tscn" && i.filename != "res://Scenes/EnemyBase.tscn"):
             vel = Vector2(speed, 0);
             continue;
         if (i.global_position.x <= enemy_x):

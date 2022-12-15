@@ -14,6 +14,6 @@ func shoot(target : Vector2):
     vel = vel.normalized() * speed;
     
 func _on_BodyCollisions_body_entered(body : PhysicsBody2D):
-    if (body.filename == "res://Scenes/Enemy.tscn" or body.filename == "res://Scenes/EnemyBase.tscn"):
+    if (body.filename == "res://Scenes/EnemyFootman.tscn" or body.filename == "res://Scenes/EnemyBase.tscn"):
         body.health -= damage;
         queue_free();

@@ -1,6 +1,6 @@
 extends Node2D
 
 func _ready():
-    $CloudAnimation.play("New Anim")
+	$CloudAnimation.play("New Anim")
 
 

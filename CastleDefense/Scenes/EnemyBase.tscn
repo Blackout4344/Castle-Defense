@@ -45,4 +45,6 @@ percent_visible = false
 [node name="EnemyLocation" type="Position2D" parent="."]
 position = Vector2( -68, 223 )
 
+[node name="Tween" type="Tween" parent="."]
+
 [connection signal="timeout" from="SpawnCooldown" to="." method="_on_SpawnCooldown_timeout"]

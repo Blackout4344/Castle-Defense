@@ -43,7 +43,7 @@ position = Vector2( 1, 0 )
 script = ExtResource( 5 )
 
 [node name="Backround" type="Sprite" parent="."]
-position = Vector2( 556, 303 )
+position = Vector2( 535, 296 )
 scale = Vector2( 2.2, 2.2 )
 z_index = -1
 texture = ExtResource( 4 )

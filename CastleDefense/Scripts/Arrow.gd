@@ -17,6 +17,3 @@ func _on_BodyCollisions_body_entered(body : PhysicsBody2D):
 	if (body.filename == "res://Scenes/EnemyFootman.tscn"):
 		body.health -= damage;
 		queue_free();
-	if body.filename == "res://Scenes/EnemyBase.tscn":
-		body.hit()
-		queue_free()

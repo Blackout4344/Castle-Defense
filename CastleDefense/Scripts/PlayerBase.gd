@@ -13,13 +13,17 @@ func _process(delta):
 	if (health <= 0):
 		queue_free();
 	$HealthBar.value = health;
+	if $Store.visible == false:
+		$ShowUnitsShop.visible = true
 
 func _ready():
 	$HealthBar.max_value = health;
+	$Store.initialize($FootmanLocation,$ArcherLocation,$DitchLocation,$KnightLocation,$BigMonkeLocation)
 
 func _on_ShowUnitsShop_pressed():
+	$Store.call_deferred("popup_centered")
 	$ShowUnitsShop.visible = false;
-	$Units.visible = true;
+	#$Units.visible = true;
 	
 func _on_HideUnitsShop_pressed():
 	$Units.visible = false;
